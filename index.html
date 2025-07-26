@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Para Cachinhos Dourados</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1><span class="typed-text"></span><span class="cursor">&nbsp;</span></h1>
+
+        <button class="reveal-btn" onclick="revealMessage()">Clique aqui se quiser saber o que eu sinto ❤️</button>
+        <div id="hidden-message" class="hidden">
+            <p>Você voltou... e com você, voltou a melhor versão de mim. ✨</p>
+        </div>
+
+        <div class="poem-box">
+            <h2>Carta para você 💌</h2>
+            <p>
+                Desde que você voltou, algo dentro de mim reacendeu.<br>
+                Eu pensei que o tempo ia me fazer esquecer...<br>
+                Mas ele só me ensinou a esperar com mais calma.<br>
+                Cachinhos Dourados, você é e sempre foi, meu ponto de paz. ❤️
+            </p>
+        </div>
+
+        <div class="quiz-box">
+            <h2>Quiz do nosso amor 💘</h2>
+            <p>Quem se apaixonou primeiro?</p>
+            <button onclick="quizAnswer('Você 😍')">Você</button>
+            <button onclick="quizAnswer('Eu 🙈')">Eu</button>
+            <button onclick="quizAnswer('Os dois juntos 💞')">Os dois juntos</button>
+            <p id="quiz-result"></p>
+        </div>
+
+        <div class="video-box">
+            <p>🔊 Nossa música: <strong>Disritmia</strong></p>
+            <iframe width="300" height="170" src="https://www.youtube.com/embed/qamHn1t_e18"
+                title="Disritmia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <p class="signature">Com carinho, de quem nunca deixou de te esperar ❤️✨</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

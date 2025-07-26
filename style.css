@@ -1,0 +1,104 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to right, #8B0000, #FF6347);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.signature {
+    font-size: 1em;
+    margin-top: 30px;
+    font-style: italic;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.cursor {
+    display: inline-block;
+    background-color: white;
+    width: 10px;
+    margin-left: 5px;
+    animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+    0% { background-color: white; }
+    50% { background-color: transparent; }
+    100% { background-color: white; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal-btn {
+    background-color: #fff;
+    color: #8B0000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.reveal-btn:hover {
+    background-color: #ffd1d1;
+}
+
+.hidden {
+    display: none;
+    margin-top: 15px;
+    font-size: 1.1em;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.poem-box, .quiz-box {
+    margin-top: 40px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.quiz-box button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #8B0000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.quiz-box button:hover {
+    background-color: #ffdddd;
+}
+
+.video-box {
+    margin-top: 30px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 1.4em; }
+    .reveal-btn, .quiz-box button { width: 100%; }
+}
